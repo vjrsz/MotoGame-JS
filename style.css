@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	image-rendering: pixelated;
+	user-select: none;
+}
+body, html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+#game{
+	overflow: hidden;
+}
+#road, #motos{
+	position: relative;
+	display: flex;
+}
+#road img, #motos img{
+	position: relative;
+}	
+	#road{
+		flex-direction: column;
+	}
+#counter{
+	position: relative;
+	z-index: 20;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0,0,0,0.5);
+}
+	#counter p{
+		font-family: 'Noto Sans', sans-serif;
+		font-size: 50px;
+		color: rgb(0,255,0);
+		text-align: center;
+	}
+	.counter-off{
+		align-items: flex-start !important;
+		background: rgba(0,0,0,0) !important;
+		transition: background 0.5s;
+	}
+	.counter-off p{
+		font-size: 18px !important;
+		background: rgb(0,0,0);
+		padding: 10px;
+		border-radius: 5px;
+	}
+
+.buttons{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+.buttons button{
+	outline: none;
+	padding: 15px;
+	border:  none;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Noto Sans', sans-serif;
+	text-transform: uppercase;
+	border: 1px solid rgb(200,200,200);
+}
+	.buttons button:hover{
+		box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.5);
+	}
+	.buttons button:pressed{
+		box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.5);
+	}
+	#black{
+		background: rgb(0,0,0);
+		color: rgb(255,255,255);
+	}
+	#white{
+		color: rgb(0,0,0);
+		background: rgb(255,255,255);
+	}
+	#red{
+		color: rgb(0,0,0);
+		background: rgb(255,0,0);
+	}
+	#blue{
+		color: rgb(0,0,0);
+		background: rgb(0,0,255);
+	}
+
+.coded{
+	align-self: center;
+	font-size: 20px;
+	font-family: 'Noto Sans', sans-serif;
+}
+
